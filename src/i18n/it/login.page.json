@@ -1,0 +1,14 @@
+{
+  "translations": {
+    "title": "Log in",
+    "form": {
+      "username": "Username",
+      "password": "Password",
+      "submit": "Log in",
+      "forgot": "Password dimenticata?",
+      "register": "Registrati",
+      "error": "Username o password errati",
+      "remember": "Ricordami"
+    }
+  }
+}

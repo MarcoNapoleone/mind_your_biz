@@ -1,0 +1,66 @@
+{
+  "name": "argos_frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.16",
+    "@mui/lab": "^5.0.0-alpha.53",
+    "@mui/material": "^5.10.17",
+    "@mui/styles": "^5.10.16",
+    "@mui/x-data-grid": "^5.17.14",
+    "@mui/x-date-pickers": "^5.0.9",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.2.4",
+    "@types/node": "^18.11.11",
+    "axios": "^1.2.1",
+    "i18next": "^22.4.5",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "js-file-download": "^0.4.12",
+    "jwt-decode": "^3.1.2",
+    "react": "^18.2.0",
+    "react-cookie": "^4.1.1",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^12.1.1",
+    "react-router-dom": "^6.4.4",
+    "react-scripts": "5.0.1",
+    "react-virtualized-auto-sizer": "^1.0.7",
+    "recharts": "^2.1.6",
+    "typescript": "^4.9.3",
+    "web-vitals": "^3.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "set-gcp-bucket-cors": "gcloud storage buckets update gs://argos-dev --cors-file=bucket-cors-settings.json",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix src/",
+    "deploy": "react-scripts build && firebase deploy"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9"
+  }
+}
